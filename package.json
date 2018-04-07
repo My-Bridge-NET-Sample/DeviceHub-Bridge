@@ -1,0 +1,14 @@
+{
+  "name": "devicehub-bridge",
+  "version": "1.0.0",
+  "description": "Bridge local MQTT broker with DeviceHub.net",
+  "main": "Bridge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillaume Bourdeaux",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt" : ">=2.1.3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "deviceHubHost":"mqtt://mqtt.devicehub.net",
+  "mqttClient":"mqtt://mosquitto",
+  "devices":[
+    {
+      "projectId":"8315",
+      "deviceUUID": "95ea8aef-88e3-4645-8f68-65160e485919",
+      "apiKeys" : "**secret**",
+      "actuators":[
+        {
+          "name":"On",
+          "type":"DIGITAL",
+          "destinations":[
+            "ESP_CB29E5/action/On",
+            "ESP_CB1CC6/action/On",
+            "ESP_CBD0AF/action/On"
+          ]
+        }
+      ]
+    },
+    {
+      "projectId":"8315",
+      "deviceUUID": "1203de5e-d25e-4cf4-b0d8-4004a39ae7ac",
+      "apiKeys" : "**secret**",
+      "sensors":[
+        {
+          "name":"Temperature",
+          "type":"ANALOG",
+          "source":"ESP_C1BC80/status/temperature"
+        },
+        {
+          "name":"Humidity",
+          "type":"ANALOG",
+          "source":"ESP_C1BC80/status/humidity"
+        }
+      ]
+    }
+  ]
+}
