@@ -6,6 +6,7 @@ var deviceHubTopicList = {};
 var localTopicList = {};
 
 deviceHubClient.on('connect', function () {
+  console.log('connected to DeviceHub.net')
   //subscribe to device actuators
   for(var i=0; i<config.devices.length; i++) {
     var device = config.devices[i];
@@ -21,6 +22,7 @@ deviceHubClient.on('connect', function () {
 })
 
 mqttClient.on('connect', function () {
+  console.log('connected to MQTT broker')
   //subscribe to local device sensors
   for(var i=0; i<config.devices.length; i++) {
     var device = config.devices[i];
